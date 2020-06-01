@@ -13,22 +13,23 @@ public class AppRoot extends Application
 
 	public static void main(String[] args)
 	{
-		launch(args);	
+		launch(args);
 	}
-	
+
 	@Override
 	public void start(Stage primaryStage) throws Exception
 	{
-		
-		//Parent라는 객체는 모든 컨테이너의 상위임
-		// fxmlloader라는 객체는 load라는 메소드르르 활용해서 (객체를가져오겠다 / 리소스(~)를) 
+
+		// Parent라는 객체는 모든 컨테이너의 상위임
+		// fxmlloader라는 객체는 load라는 메소드르르 활용해서 (객체를가져오겠다 / 리소스(~)를)
 		// Root.fxml이 지금 경로보다 위에 있으면 ../~~~/Root.fxml 이런식으로 써주면됨
-		Parent root = FXMLLoader.load(getClass().getResource("Root.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("Root.fxml")); // getclass.getresource 를 사용해서 root.fxml에 대해
+																			// 객체를 생성해줌
 		
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		primaryStage.setTitle("Fxml sample");
-		
+
 	}
 }
