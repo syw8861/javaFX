@@ -17,7 +17,7 @@ public class ButtonMain extends Application
 	public void start(Stage primaryStage) throws Exception
 	{
 		BorderPane border = FXMLLoader.load(getClass().getResource("ButtonControl.fxml"));
-		Scene scene = new Scene(root);
+		Scene scene = new Scene(border);
 		primaryStage.setScene(scene);
 		primaryStage.show();
 		
