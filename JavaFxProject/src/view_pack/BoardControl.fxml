@@ -6,20 +6,27 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.*?>
 
-<AnchorPane prefHeight="329.0" prefWidth="509.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="350.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="view_pack.BoardController">
+	
 	<children>
-		<TableView layoutX="25" layoutY="55" prefHeight="241" prefWidth="175">
+		<TableView fx:id="tableView" layoutX="25" layoutY="55" prefHeight="241" prefWidth="175">
 		</TableView>
 		
-		<TextField layoutX="283" layoutY="51" prefHeight="23" prefWidth="192" />
-		<ComboBox layoutX="235" layoutY="110" prefHeight="23" prefWidth="85" />
-		<TextField layoutX="351" layoutY="110" prefHeight="23" prefWidth="113" />
-		<TextArea layoutX="235" layoutY="163" prefHeight="131" prefWidth="247" />
+		<TextField fx:id="textfield" layoutX="283" layoutY="51" prefHeight="23" prefWidth="192" />
+		<ComboBox fx:id="combobox" layoutX="235" layoutY="110" prefHeight="23" prefWidth="85" />
+		<TextField fx:id="textfield2" layoutX="351" layoutY="110" prefHeight="23" prefWidth="113" />
+		<TextArea fx:id="textarea" layoutX="235" layoutY="163" prefHeight="131" prefWidth="247" />
+		
 		<Label layoutX="25" layoutY="30" text="리스트" />
+		
 		<Label layoutX="238" layoutY="30" text="상세내용" />
+		
 		<Label layoutX="235" layoutY="55" text="제목" />
+		
 		<Label layoutX="235" layoutY="88" text="공개여부" />
+		
 		<Label layoutX="353" layoutY="88" text="종료일자" />
+		
 		<Label layoutX="235" layoutY="139" text="내용" />
 		
 	</children>

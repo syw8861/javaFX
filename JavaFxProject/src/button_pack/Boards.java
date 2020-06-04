@@ -6,6 +6,7 @@ public class Boards
 	private String password;
 	private String publicity;
 	private String exitDate;
+	private String content;
 	public Boards(String title, String password, String publicity, String exitDate)
 	{
 		super();
@@ -14,7 +15,6 @@ public class Boards
 		this.publicity = publicity;
 		this.exitDate = exitDate;
 	}
-	private String content;
 	public String getTitle()
 	{
 		return title;
