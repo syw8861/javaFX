@@ -64,6 +64,8 @@ public class MediaController implements Initializable
 						double progress = player.getCurrentTime().toSeconds() / player.getTotalDuration().toSeconds();
 						progessBar.setProgress(progress);
 						progressIndicator.setProgress(progress);
+						labelTime.setText((int)player.getCurrentTime().toSeconds()+"/"+
+										  (int)player.getTotalDuration().toSeconds()+" sec");
 					}
 					
 				});
@@ -113,6 +115,9 @@ public class MediaController implements Initializable
 				btnPlay.setDisable(false); //false일때 enable상태임
 				btnStop.setDisable(true);
 				btnPause.setDisable(true);
+				progessBar.setProgress(1.0);
+				progressIndicator.setProgress(1.0);
+				
 				
 			}
 			
