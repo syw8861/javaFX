@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="booka" layoutX="149.0" layoutY="37.0" />
+      <TextField fx:id="bookb" layoutX="125.0" layoutY="79.0" />
+      <TextField fx:id="bookc" layoutX="149.0" layoutY="144.0" />
+      <TextField fx:id="bookd" layoutX="131.0" layoutY="200.0" />
+      <TextField fx:id="booke" layoutX="149.0" layoutY="248.0" />
+      <Label layoutX="51.0" layoutY="60.0" text="도서코드" />
+      <Label layoutX="46.0" layoutY="95.0" text="도서명" />
+      <Label layoutX="61.0" layoutY="140.0" text="저자" />
+      <Label layoutX="51.0" layoutY="204.0" text="단가" />
+      <Label layoutX="45.0" layoutY="252.0" text="판매량" />
+      <Button fx:id="btnAddAdd" layoutX="104.0" layoutY="322.0" mnemonicParsing="false" text="입력" />
+      <Button fx:id="btnCancel" layoutX="218.0" layoutY="322.0" mnemonicParsing="false" text="취소" />
+   </children>
+</AnchorPane>
