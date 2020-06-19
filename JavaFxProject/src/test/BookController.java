@@ -15,7 +15,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.XYChart;
-import javafx.scene.chart.XYChart.Data;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -73,7 +72,7 @@ public class BookController implements Initializable
 		tableView.setItems(scores);
 	
 	}
-
+	//tableView.getSelectionModel(().selecrtdItemProperty().getValue().getBookb().
 	public void buttonAddaction(ActionEvent aa)
 	{
 		Stage addStage = new Stage(StageStyle.UTILITY);

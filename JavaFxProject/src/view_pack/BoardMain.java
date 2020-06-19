@@ -15,7 +15,6 @@ public class BoardMain extends Application
 	public void start(Stage primaryStage) throws Exception
 	{
 		Parent root = FXMLLoader.load(getClass().getResource("BoardControl.fxml"));
-		
 		Scene scene = new Scene(root);
 		primaryStage.show();
 		primaryStage.setScene(scene);
